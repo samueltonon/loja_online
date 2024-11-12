@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    margin-bottom: 56px;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1,
+nav a,
+.sobre-nos h2,
+.sobre-nos p,
+.mercadorias h2,
+.prod-disponiveis h3,
+.prod-disponiveis p,
+footer {
+    color: #ccc;
+}
+
+header img {
+    max-width: 80px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bic-skate-shop {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #000;
+    color: #ccc;
+}
+
+#sobre img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#sobre {
+    display: flex;
+}
+
+.sobre-nos {
+    display: block;
+    margin-left: 32px;
+}
+
+.sobre-nos h2 {
+    margin-bottom: 32px;
+    border-bottom: 2px solid #ccc;
+}
+
+.sobre-nos p {
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+}
+
+.mercadorias ul {
+    list-style: none;
+}
+
+.mercadorias h2 {
+    margin-top: 56px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #ccc;
+}
+
+.mercadorias img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.prod-disponiveis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.prod-disponiveis li {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    align-items: center;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.prod-disponiveis h3 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.prod-disponiveis p {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.prod-disponiveis button {
+    padding: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.prod-disponiveis button:hover {
+    background-color: #949292;
+}
+
+footer {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 56px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    header h1 {
+        margin-bottom: 32px;
+    }
+
+    header img {
+        margin-bottom: 32px;
+    }
+
+    #sobre {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+
+    .sobre-nos {
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .prod-disponiveis button {
+        padding: 12px;
+        width: 100%;
+        margin-top: 23px;
+        color: #ccc;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sobre-nos p {
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .prod-disponiveis {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    #sobre {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+
+    .sobre-nos {
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .prod-disponiveis button {
+        padding: 12px;
+        width: 100%;
+        margin-top: 23px;
+        color: #ccc;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .sobre-nos p {
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .prod-disponiveis {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
